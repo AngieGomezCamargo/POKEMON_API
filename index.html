@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Mejorada</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1 class="titulo">Pokédex Mejorada</h1>
+  <p class="subtitulo"><strong>Nombre:</strong> Angie Valentina Gómez Camargo</p>
+
+  <!-- Buscador por nombre -->
+  <div class="buscador">
+    <input type="text" id="inputBuscarNombre" placeholder="Escribe el nombre del Pokémon (ej: pikachu)">
+    <button id="btnBuscarNombre">Buscar por Nombre</button>
+  </div>
+
+  <!-- Buscador por ID -->
+  <div class="buscador">
+    <input type="number" id="inputBuscarID" placeholder="Escribe el ID del Pokémon (ej: 25)">
+    <button id="btnBuscarID">Buscar por ID</button>
+  </div>
+
+  <!-- Tarjeta de resultados -->
+  <div class="card">
+    <h2 id="tituloCard">Pokémon Inicial (Pikachu)</h2>
+    <h3 id="nombre_pokemon"></h3>
+    <img id="img" alt="Imagen Pokémon">
+
+    <div id="infoExtra">
+      <div class="stats">
+        <div class="stat-box">
+          <strong>ID</strong>
+          <span id="idPokemon"></span>
+        </div>
+        <div class="stat-box">
+          <strong>Peso</strong>
+          <span id="pesoPokemon"></span>
+        </div>
+        <div class="stat-box">
+          <strong>Altura</strong>
+          <span id="alturaPokemon"></span>
+        </div>
+      </div>
+
+      <p><strong>Habilidades:</strong></p>
+      <ul id="habilidadesPokemon"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
